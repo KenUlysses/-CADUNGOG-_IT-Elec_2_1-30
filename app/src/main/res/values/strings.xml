@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">ANDROIDCODING</string>
+    <string name="To">To</string>
+    <string name="Subject">Subject</string>
+    <string name="message">Message</string>
+    <string name="send">Send jp</string>
 </resources>
