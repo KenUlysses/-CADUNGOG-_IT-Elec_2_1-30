@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Prelim_Cadungog_ELEC2Second">
+
+
+    <Button
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="16dp"
+        android:drawableLeft="@drawable/search"
+        android:text="Search" />
+
+    <EditText
+        android:id="@+id/vcxvx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_toRightOf="@id/search"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:text="VCXVX" />
+
+    <CheckBox
+        android:id="@+id/dogs"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="35dp"
+        android:text="Dogs" />
+
+    <CheckBox
+        android:id="@+id/cats"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dogs"
+        android:layout_marginLeft="20dp"
+        android:text="Cats" />
+
+    <RadioButton
+        android:id="@+id/pirates"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search"
+        android:layout_toRightOf="@id/dogs"
+        android:layout_marginTop="35dp"
+        android:text="Pirates" />
+
+    <RadioButton
+        android:id="@+id/ninjas"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dogs"
+        android:layout_toRightOf="@id/cats"
+        android:text="Ninjas" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cats"
+        android:layout_toRightOf="@id/toggles"
+        android:layout_marginTop="20dp"
+        android:text="ToggleButton" />
+
+    <TextView
+        android:id="@+id/toggles"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cats"
+        android:layout_marginTop="30dp"
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Toggles" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cats"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/toggleButton"
+        android:minHeight="48dp"
+        android:text="Switch" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/toggles"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="382dp"
+        android:layout_below="@id/spinner"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
