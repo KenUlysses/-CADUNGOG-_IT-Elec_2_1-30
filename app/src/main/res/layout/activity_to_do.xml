@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".To_Do">
+
+    <LinearLayout
+        android:id="@+id/id_btm_sec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+    >
+       <EditText
+           android:id="@+id/id_edit_text"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_marginRight="10dp"
+           android:layout_weight="1"
+           />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:onClick="add_item_list"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#eee"
+        android:layout_above="@+id/id_btm_sec">
+        
+        <ListView
+            android:padding="15dp"
+            android:id="@+id/id_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ListView>
+
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
